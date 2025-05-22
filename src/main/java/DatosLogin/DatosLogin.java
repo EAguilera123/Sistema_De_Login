@@ -1,5 +1,10 @@
+package DatosLogin;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
-import java.io.*;
 
 /**
  * Clase responsable de cargar las credenciales desde un archivo.
@@ -21,7 +26,7 @@ public class DatosLogin {
         // TODO: Abrir archivo login.txt
         // TODO: Leer línea por línea y agregar solo las que contienen ";"
         // TODO: Ignorar líneas vacías o mal formateadas
-        File archivo = new File("src/main/java/datos.txt");
+        File archivo = new File("src/main/java/datos/datos.txt");
         if (!archivo.exists()) {
             System.err.println("Archivo datos.txt no encontrado.");
             return;

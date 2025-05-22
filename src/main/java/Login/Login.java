@@ -1,3 +1,6 @@
+package Login;
+
+import DatosLogin.DatosLogin;
 /**
  * Clase encargada de verificar las credenciales del usuario.
  */
