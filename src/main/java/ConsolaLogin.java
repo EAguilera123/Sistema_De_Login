@@ -63,7 +63,11 @@ public class ConsolaLogin {
         System.out.println("ingrese su contraseña");
         clave = scanner.nextLine();
 
-        login.autenticar(usuario, clave, datos);
+        if (login.autenticar(usuario, clave, datos)) {
+            System.out.println("su cuenta ha sido autenticada");
+        } else {
+            System.out.println("usted no es usuario");
+        }
 
     }
     public int obtenerOpcion(int opcion) {

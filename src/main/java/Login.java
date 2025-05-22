@@ -14,14 +14,12 @@ public class Login {
     public boolean autenticar(String usuario, String clave, DatosLogin datos) {
         String intento = usuario + ";" + clave;
 
-        for (String linea : datos.getCredenciales()) {
-            if (linea != null && linea.trim().equals(intento)) {
+        for (String credencial : datos.credenciales) {
+            if (credencial.equals(intento)) {
                 return true;
             }
         }
-
         return false;
     }
 
-}
 }
