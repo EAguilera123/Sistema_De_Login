@@ -18,9 +18,8 @@ public class ConsolaLogin {
         do {
             mostrarOpciones();
             opcion = obtenerOpcion(0);
-            if (opcion != -1) {
-                ejecutarOpcion(opcion);
-            }
+            ejecutarOpcion(opcion);
+
         } while (opcion != 2);
     }
 
@@ -41,9 +40,9 @@ public class ConsolaLogin {
     private void ejecutarOpcion(int opcion) {
         // TODO: Si es "1" llamar a manejarLogin, si es "2" salir
         switch (opcion) {
-            case 1: manejarLogin();
-            case 2: System.out.println("Saliendo...");
-            default: System.out.println("opcion invalida");
+            case 1 -> manejarLogin();
+            case 2 -> System.out.println("Saliendo...");
+            default -> System.out.println("opcion invalida");
         }
 
     }
