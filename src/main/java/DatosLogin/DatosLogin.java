@@ -26,7 +26,7 @@ public class DatosLogin {
         // TODO: Abrir archivo login.txt
         // TODO: Leer línea por línea y agregar solo las que contienen ";"
         // TODO: Ignorar líneas vacías o mal formateadas
-        File archivo = new File("src/main/java/datos/datos.txt");
+        File archivo = new File("src/main/java/datos/dato.txt");
         if (!archivo.exists()) {
             System.err.println("Archivo datos.txt no encontrado.");
             return;
